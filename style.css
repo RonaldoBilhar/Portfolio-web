@@ -1,0 +1,237 @@
+    /*General*/
+    @font-face {
+        font-family: "Audiowide";
+        src: url(./fonts/Audiowide/Audiowide-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Jura";
+        src: url(./fonts/Jura/Jura-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+        font-family: "Barlow";
+        src: url(./fonts/Barlow/Barlow-Regular.ttf);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        /*desliza a página mais lentamente qundo acionado os links internos */
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(95, 94, 94);
+
+    }
+
+    #container {
+        max-width: 1000px;
+        min-width: 500px;
+        margin: auto;
+        background-color: rgb(46, 45, 45);
+    }
+
+    /*Start*/
+    nav {
+        background-color: rgba(32, 32, 32, 0.5);
+        height: 40px;
+        display: block;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav a {
+        text-decoration: none;
+        float: right;
+        padding-right: 15px;
+        padding-top: 6px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px 2px rgba(32, 32, 32, 1);
+        font-family: 'Audiowide', sans-serif;
+    }
+
+    nav a:hover {
+        font-size: 22px;
+        transition-duration: .5s;
+        text-decoration: underline;
+        color: rgb(206, 210, 245);
+    }
+
+    header {
+        background: url(./images/img01.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    #center_card {
+        background-color: rgba(32, 32, 32, 0.4);
+        height: 380px;
+        max-width: 450px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 200px;
+        border-radius: 20px;
+    }
+
+    #center_card h1 {
+        font-size: 45px;
+        font-family: 'Audiowide', sans-serif;
+        color: rgb(206, 210, 245);
+        text-shadow: 1px 3px 3px rgba(32, 32, 32, 1);
+    }
+
+    #center_card p {
+        font-family: 'Jura', sans-serif;
+        padding-top: 20px;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 1px 3px 2px rgb(32, 32, 32);
+    }
+
+    hr {
+        height: 1px;
+        width: 300px;
+        margin: auto;
+        border-color: black;
+        margin-top: 10px;
+    }
+
+    #center_card img {
+        margin-top: -40px;
+        width: 150px;
+        height: 200px;
+        border-radius: 15%;
+    }
+
+
+    /*Content "Projetos"*/
+    #projetos {
+        background-color: white;
+        background-image: url(./images/img13.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        padding: 35px;
+    }
+
+    #projetos img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-right: 30px;
+        display: block;
+        float: left;
+    }
+
+    h2 {
+        font-family: 'Jura', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-family: 'Barlow';
+        font-size: 25px;
+        padding: 60px;
+        text-indent: 20px;
+        text-align: justify;
+    }
+
+    /*Content "cursos"*/
+    #cursos {
+        padding: 35px;
+        background-image: url(./images/estudo.jpg);
+        background-attachment: fixed;
+        background-position: 50%;
+    }
+
+    #cursos p {
+        font-family: 'Barlow';
+        font-size: 25px;
+        text-indent: 20px;
+        text-align: justify;
+    }
+
+    #cursos h2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px 1px black;
+    }
+
+    .efect {
+        background-color: rgba(32, 32, 32, 0.5);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px 1px rgb(167, 5, 5);
+    }
+
+    li {
+        font-family: 'Barlow';
+        list-style: url(./images/arow.png);
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    /*content "sobre"*/
+    #sobre {
+        background-color: rgb(255, 254, 253);
+        padding: 35px;
+        background-image: url(./images/img11.jpg);
+        background-size: cover;
+    }
+        /*
+    background: linear-gradient(45deg,#e5c5b5,#99a8b2,#e6d5b8);
+    background-size: 400% 300%;
+    animation: 'gradient' 20s ease infinite; */
+    
+
+    /*movimentação do backgroud gradient*/
+    /*
+    @keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+} */
+
+    #contatos{      
+        background: url(./images/conection.png);
+        background-size: cover;   
+        color: white;
+        text-align: center;
+        text-shadow: 1px 2px 1px black;
+    }
+    #contatos p{
+        text-align: center;
+    }
+    #contatos h2{
+        color: white;
+    }
+    #contatos img{
+        margin: 35px;
+        border-radius: 30%;
+    }
+
+    footer{
+        height: 25px;     
+        padding: 15px;
+        text-align: center;
+        color: aliceblue;
+        font-size: 18px;       
+    }
