@@ -119,9 +119,8 @@
     #projetos {
         background-color: white;
         background-image: url(./images/img13.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50%;
         padding: 35px;
     }
 
